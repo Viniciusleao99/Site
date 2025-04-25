@@ -1,0 +1,363 @@
+
+/* HERO (imagem de fundo substituível depois) */
+.hero {
+  background: url('/assets/img/imagem_home.png') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding-top: 90px;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 8%;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-hero {
+  background-color: #f29c13;
+  color: white;
+}
+
+.btn-hero:hover {
+  background-color: #d9820f;
+}
+
+/* SOBRE */
+.sobre-nos {
+  background-color: #f5f5f5;
+  padding: 80px 0px;
+}
+
+.sobre-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coluna-imagens {
+  flex: 1 1 40%;
+}
+
+.img-sobre {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.texto-sobre {
+  flex: 1 1 55%;
+}
+
+.texto-sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+
+.checklist li span {
+  color: #f29c13;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.sobreposicao-imagens {
+  position: relative;
+  width: 100%;
+  max-width: 500px; 
+  height: auto;
+}
+
+/* IMAGEM DO FUNDO */
+.img-fundo {
+  position: absolute;
+  top: -225px;
+  right: 115px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: 1;
+}
+
+/* IMAGEM DO TOPO */
+.img-topo {
+  position: absolute;
+  top: -80px;       
+  left: 30px;      
+  width: 80%;      
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: 2;
+}
+
+/* SERVIÇOS */
+.servicos {
+  background: #fff;
+  padding: 80px 30px;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.cards-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.icone-servico {
+  background-color: #f29c13;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.icone-servico img {
+  display: block;
+  height: 60px;
+  width: auto;
+}
+
+/* BLOCO CTA VISUAL COM FUNDO LARANJA */
+.cta-visual {
+  background-color: #f29c13;
+  padding: 80px 30px;
+  color: white;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  background-color: #111;
+  border-radius: 10px;
+  padding: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-numeros {
+  flex: 1 1 55%;
+}
+
+.cta-numeros .legenda {
+  font-size: 0.9rem;
+  color: #f29c13;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cta-numeros h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cta-numeros .descricao {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+  max-width: 500px;
+}
+
+.bloco-numeros {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.numero-box {
+  text-align: left;
+  color: white;
+  max-width: 180px;
+}
+
+.num-linha {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.icon-num {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.num {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f29c13;
+}
+
+.plus {
+  font-size: 1rem;
+  color: #f29c13;
+  margin-left: 2px;
+}
+
+.numero-box p {
+  font-size: 1rem;
+  color: #eee;
+  margin: 0;
+}
+
+.cta-conteudo {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.cta-conteudo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.cta-conteudo p {
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.btn-light {
+  background-color: white;
+  color: #f29c13;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #f29c13;
+  color: white;
+}
+
+/* ANIMAÇÕES GERAIS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.12s; }
+.delay-2 { animation-delay: 0.8s; }
+.delay-3 { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .sobre-flex {
+    flex-direction: column;
+  }
+
+  .cards-servicos {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
